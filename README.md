@@ -3,3 +3,7 @@ This project is created to build a universal script that can take raw scripts fr
 
 # Current scripts:
 - 5bp. (Steins;Gate)
+
+
+### Note:
+Due to the nature of VNs, the formatting might differ even on VNs from the same engine. You may have to manually look through the finished product and check for any problems. Most likely, it won't be a problem.
