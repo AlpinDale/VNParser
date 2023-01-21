@@ -1,7 +1,7 @@
 import glob
 import os
 
-directory = '/path/to/your/directory/'
+directory = './'
 rpy_files = sorted(glob.glob(directory + '*.rpy'))
 combined_file = open(directory + 'combined.rpy', 'w')
 for filename in rpy_files:
