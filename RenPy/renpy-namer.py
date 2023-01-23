@@ -11,7 +11,7 @@ with open(filename, "r") as f:
 speaker_names = {}
 
 for i, line in enumerate(lines):
-    match = re.match(r"([a-z]+):", line)
+    match = re.match(r"([A-Za-z]+):", line)
     if match:
         speaker_abbr = match.group(1)
         if speaker_abbr not in speaker_names:
