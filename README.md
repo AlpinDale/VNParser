@@ -9,5 +9,5 @@ This project is created to build a universal script that can take raw scripts fr
 ### Note:
 Due to the nature of VNs, the formatting might differ even on VNs from the same engine. You may have to manually look through the finished product and check for any problems. Most likely, it won't be a problem.
 
-##RenPy note:
+### RenPy note:
 Look through your raw script and see if dialogues start after 4 spaces in a new line. If they do, the script will work. Otherwise, you'll have to make modifications to the script to make it work.
