@@ -29,30 +29,8 @@ with open("output.txt", "r") as f:
     lines = f.read().splitlines()
 
 # remove renpy command lines
-lines = [line for line in lines if not line.startswith("voice")]
-lines = [line for line in lines if not line.startswith("stop")]
-lines = [line for line in lines if not line.startswith("scene")]
-lines = [line for line in lines if not line.startswith("with")]
-lines = [line for line in lines if not line.startswith("show")]
-lines = [line for line in lines if not line.startswith("hide")]
-lines = [line for line in lines if not line.startswith("play")]
-lines = [line for line in lines if not line.startswith("window")]
-lines = [line for line in lines if not line.startswith("$")]
-lines = [line for line in lines if not line.startswith("if")]
-lines = [line for line in lines if not line.startswith("pause")]
-lines = [line for line in lines if not line.startswith("label")]
-lines = [line for line in lines if not line.startswith("call")]
-lines = [line for line in lines if not line.startswith("return")]
-lines = [line for line in lines if not line.startswith("jump")]
-lines = [line for line in lines if not line.startswith("menu")]
-lines = [line for line in lines if not line.startswith("    ")]
-lines = [line for line in lines if not line.startswith("        ")]
-lines = [line for line in lines if not line.startswith("elif")]
-lines = [line for line in lines if not line.startswith("midget")]
-lines = [line for line in lines if not line.startswith("]")]
-lines = [line for line in lines if not line.startswith("[")]
-lines = [line for line in lines if not line.startswith("queue")]
-lines = [line for line in lines if not line.startswith("else")]
+RENPY_CMD_LINES = ("voice", "stop", "scene", "with", "show", "hide", "queue", "play", "window", "$", "else", "if", "pause", "label", "call", "return", "jump", "menu", "    ", "        ", "elif", "midget", "]", "[", "queue", "xalign", "yalign", "#", "fixed", "imagemap", "imagebutton", "default", "linear", "xpos", "python")
+lines = [line for line in lines if not line.startswith(RENPY_CMD_LINES)]
 
 for i, line in enumerate(lines):
     # remove all instances of backslash in the file
