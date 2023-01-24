@@ -19,7 +19,7 @@ for i, line in enumerate(lines):
             if correct_name:
                 speaker_names[speaker_abbr] = correct_name
         if speaker_abbr in speaker_names:
-            lines[i] = re.sub(r"^[a-z]+:", speaker_names[speaker_abbr] + ":", line)
+            lines[i] = re.sub(r"^[A-Za-z]+:", speaker_names[speaker_abbr] + ":", line)
 
 #write the modified lines back to the same file
 with open(filename, "w") as f:
