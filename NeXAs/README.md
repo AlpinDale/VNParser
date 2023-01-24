@@ -10,5 +10,6 @@ Then open up the `baldr-sky-cleanup` file and replace the names in line 13 with 
 The script doesn't seem to delete instances of `\t` and `\n` at the end. I don't know the reason for the first one, but for `\n` it's
 impossible to my knowledge, because that would delete every line break too. So you have to open a text editor and replace all instances
 of `\t` and `\n` with a blank character. You can do this by not typing anything in the replace section.
-Also, it seems like Baldr's Sky has this weird character in the text: , make sure to remove it as well. Copy it here and paste in replace
-screen.
+~~Also, it seems like Baldr's Sky has this weird character in the text: , make sure to remove it as well. Copy it here and paste in replace
+screen.~~
+Don't do that ^, it'll most likely crash your text editor. Just look through the file for it and copy from there. 
