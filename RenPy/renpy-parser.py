@@ -52,6 +52,7 @@ lines = [line for line in lines if not line.startswith("midget")]
 lines = [line for line in lines if not line.startswith("]")]
 lines = [line for line in lines if not line.startswith("[")]
 lines = [line for line in lines if not line.startswith("queue")]
+lines = [line for line in lines if not line.startswith("else")]
 
 for i, line in enumerate(lines):
     # remove all instances of backslash in the file
