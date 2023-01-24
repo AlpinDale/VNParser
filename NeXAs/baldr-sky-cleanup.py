@@ -20,7 +20,6 @@ with open(file_name, 'w') as f:
     for line in new_lines:
         f.write(line)
 
-# remove remaining instances of \t, \h, and \r
 with open(file_name, 'r') as f:
     lines = f.read()
 
