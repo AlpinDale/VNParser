@@ -10,6 +10,7 @@ new_lines = []
 for line in lines:
     line = re.sub(r'\\t\S{4}', '', line)
     line = re.sub(r'\\s\S{4}', '', line)
+    line = re.sub(r'\\s\S{2}', '', line)
     line = re.sub(r'\\r\\', '', line)
     line = re.sub(r'\\h(KOU|RAIN|CHINATSU|NANOHA|MAKOTO|SORA|AKI|SEIRA|KUU|ANAN|GILBERT|EIJI|ISAO|NAOKI|NOI|SHIZEL|MASA)\S{6}', '', line)
     new_lines.append(line)
