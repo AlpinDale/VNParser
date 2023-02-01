@@ -5,6 +5,7 @@ This project is created to build a universal script that can take raw scripts fr
 - Steins;Gate
 - RenPy
 - NeXAs
+- rUGP
 
 `jpn-remover.py` removes any instance of Japanese text from a file.
 
