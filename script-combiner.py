@@ -9,8 +9,9 @@ combined_file = open(directory + 'combined' + extension, 'w', encoding='utf-8')
 for filename in files:
     separator = '\n' + '\n' * 5 + '=' * 10 + os.path.basename(filename) + '=' * 10 + '\n'
     combined_file.write(separator)
-    with open(filename, encoding=encoding) as f:
+    with open(filename, encoding=encoding, errors='ignore') as f:
         for line in f:
             combined_file.write(line)
     combined_file.write('\n' * 5)
 combined_file.close()
+
